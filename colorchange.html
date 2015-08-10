@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language=javascript>
+var count=0;
+function change()
+{
+setTimeout("frnd()",5000);
+}
+function frnd()
+{
+var ab =new 
+Array("black","grey","red","green","darkblue","yellow","pink");
+if(count<=10)
+{
+document.bgColor=ab[count++];
+setTimeout("frnd()",5000);
+}
+else
+{
+count=0;
+change();
+}
+}
+</script>
+</head>
+<body bgcolor=green onload=change()>
+</body>
+</html>
